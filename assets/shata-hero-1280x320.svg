@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="Shata Solutions — building operating systems for real-world industries. Terminal boot sequence: initializing engineering core, connecting industry platforms, enabling human operations, activating AI intelligence (optional), systems online.">
+  <style>
+    .b{opacity:.3}
+    .b0{animation:up 8s linear infinite 0s}.b1{animation:up 8s linear infinite .7s}
+    .b2{animation:up 8s linear infinite 1.4s}.b3{animation:up 8s linear infinite 2.1s}
+    .on{animation:up 8s linear infinite 2.8s;opacity:.3}
+    @keyframes up{0%{opacity:.3}8%{opacity:1}88%{opacity:1}96%{opacity:.3}100%{opacity:.3}}
+    .cur{animation:blink 1.2s steps(1) infinite}
+    @keyframes blink{50%{opacity:0}}
+  </style>
+  <rect width="1280" height="320" fill="#020617"/>
+  <path d="M56 56h1v1h-1zM112 56h1v1h-1zM168 56h1v1h-1zM224 56h1v1h-1zM280 56h1v1h-1zM336 56h1v1h-1zM392 56h1v1h-1zM448 56h1v1h-1zM504 56h1v1h-1zM560 56h1v1h-1zM616 56h1v1h-1zM672 56h1v1h-1zM728 56h1v1h-1zM784 56h1v1h-1zM840 56h1v1h-1zM896 56h1v1h-1zM952 56h1v1h-1zM1008 56h1v1h-1zM1064 56h1v1h-1zM1120 56h1v1h-1zM1176 56h1v1h-1zM1232 56h1v1h-1zM56 112h1v1h-1zM112 112h1v1h-1zM168 112h1v1h-1zM224 112h1v1h-1zM280 112h1v1h-1zM336 112h1v1h-1zM392 112h1v1h-1zM448 112h1v1h-1zM504 112h1v1h-1zM560 112h1v1h-1zM616 112h1v1h-1zM672 112h1v1h-1zM728 112h1v1h-1zM784 112h1v1h-1zM840 112h1v1h-1zM896 112h1v1h-1zM952 112h1v1h-1zM1008 112h1v1h-1zM1064 112h1v1h-1zM1120 112h1v1h-1zM1176 112h1v1h-1zM1232 112h1v1h-1zM56 168h1v1h-1zM112 168h1v1h-1zM168 168h1v1h-1zM224 168h1v1h-1zM280 168h1v1h-1zM336 168h1v1h-1zM392 168h1v1h-1zM448 168h1v1h-1zM504 168h1v1h-1zM560 168h1v1h-1zM616 168h1v1h-1zM672 168h1v1h-1zM728 168h1v1h-1zM784 168h1v1h-1zM840 168h1v1h-1zM896 168h1v1h-1zM952 168h1v1h-1zM1008 168h1v1h-1zM1064 168h1v1h-1zM1120 168h1v1h-1zM1176 168h1v1h-1zM1232 168h1v1h-1zM56 224h1v1h-1zM112 224h1v1h-1zM168 224h1v1h-1zM224 224h1v1h-1zM280 224h1v1h-1zM336 224h1v1h-1zM392 224h1v1h-1zM448 224h1v1h-1zM504 224h1v1h-1zM560 224h1v1h-1zM616 224h1v1h-1zM672 224h1v1h-1zM728 224h1v1h-1zM784 224h1v1h-1zM840 224h1v1h-1zM896 224h1v1h-1zM952 224h1v1h-1zM1008 224h1v1h-1zM1064 224h1v1h-1zM1120 224h1v1h-1zM1176 224h1v1h-1zM1232 224h1v1h-1zM56 280h1v1h-1zM112 280h1v1h-1zM168 280h1v1h-1zM224 280h1v1h-1zM280 280h1v1h-1zM336 280h1v1h-1zM392 280h1v1h-1zM448 280h1v1h-1zM504 280h1v1h-1zM560 280h1v1h-1zM616 280h1v1h-1zM672 280h1v1h-1zM728 280h1v1h-1zM784 280h1v1h-1zM840 280h1v1h-1zM896 280h1v1h-1zM952 280h1v1h-1zM1008 280h1v1h-1zM1064 280h1v1h-1zM1120 280h1v1h-1zM1176 280h1v1h-1zM1232 280h1v1h-1z" fill="#334155" opacity="0.35"/>
+  <g font-family="-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif">
+    <text x="72" y="118" font-size="56" font-weight="700" fill="#E2E8F0">SHATA <tspan fill="#3B82F6">SOLUTIONS</tspan></text>
+    <text x="74" y="170" font-size="25" fill="#E2E8F0">Building operating systems for real-world industries.</text>
+    <text x="74" y="206" font-size="21" fill="#94A3B8">AI-powered when useful. Fully human-operable by design.</text>
+    <text x="74" y="246" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="16" fill="#94A3B8">restaurants · commerce · automotive · energy</text>
+    <text x="74" y="272" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="16" fill="#94A3B8">hospitality · trade · software platforms</text>
+  </g>
+  <rect x="668" y="60" rx="10" width="548" height="212" fill="#0F172A" stroke="#334155"/>
+  <circle cx="694" cy="84" r="5" fill="#334155"/><circle cx="712" cy="84" r="5" fill="#334155"/><circle cx="730" cy="84" r="5" fill="#334155"/>
+  <text class="b b0" x="700" y="118" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="19"><tspan fill="#3B82F6">▸ </tspan><tspan fill="#E2E8F0">initializing engineering core </tspan><tspan fill="#334155">. </tspan><tspan fill="#94A3B8">ok</tspan></text>
+  <text class="b b1" x="700" y="152" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="19"><tspan fill="#3B82F6">▸ </tspan><tspan fill="#E2E8F0">connecting industry platforms </tspan><tspan fill="#334155">. </tspan><tspan fill="#94A3B8">ok</tspan></text>
+  <text class="b b2" x="700" y="186" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="19"><tspan fill="#3B82F6">▸ </tspan><tspan fill="#E2E8F0">enabling human operations </tspan><tspan fill="#334155">..... </tspan><tspan fill="#94A3B8">ok</tspan></text>
+  <text class="b b3" x="700" y="220" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="19"><tspan fill="#3B82F6">▸ </tspan><tspan fill="#E2E8F0">activating ai intelligence </tspan><tspan fill="#334155">.... </tspan><tspan fill="#3B82F6">optional</tspan></text>
+  <text class="on" x="700" y="254" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="19" font-weight="600"><tspan fill="#3B82F6">systems online</tspan><tspan class="cur" fill="#E2E8F0">_</tspan></text>
+  <rect width="1280" height="4" y="316" fill="#1D4ED8"/>
+</svg>
