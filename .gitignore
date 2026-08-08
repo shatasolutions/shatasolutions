@@ -1,0 +1,5 @@
+motion/node_modules/
+motion/dist/
+motion/frames/
+frames/
+.DS_Store

@@ -16,8 +16,10 @@ for (const m of md.matchAll(/\]\((?!https?:|mailto:|#)([^)\s]+)\)|src="(?!https?
   const rel = m[1] ?? m[2];
   const p = join(root, rel);
   if (!existsSync(p)) { errors.push(`missing asset: ${rel}`); continue; }
-  if (rel.endsWith(".svg") && statSync(p).size > 60 * 1024)
-    errors.push(`asset over 60 KB budget: ${rel} (${statSync(p).size} B)`);
+  const budgets = { ".svg": 60 * 1024, ".gif": 8 * 1024 * 1024, ".png": 500 * 1024 };
+  const ext = rel.slice(rel.lastIndexOf("."));
+  if (budgets[ext] && statSync(p).size > budgets[ext])
+    errors.push(`asset over budget: ${rel} (${statSync(p).size} B > ${budgets[ext]} B)`);
 }
 
 // 2. Nothing private or environment-specific may appear on the public page.
