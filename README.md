@@ -1,5 +1,9 @@
 <p align="center">
-  <img src="assets/shata-hero-1280x320.svg" alt="Shata Solutions — building operating systems for real-world industries. Terminal boot sequence: initializing engineering core, connecting industry platforms, enabling human operations, activating AI intelligence (optional), systems online." width="100%">
+  <a href="https://shatasolutions.github.io/shatasolutions/">
+    <img src="assets/hero-motion.gif" alt="Animated title sequence: the Shata Solutions wordmark ignites over a drifting grid; a central engineering core assembles a platform ring (Engineering Core, Identity, Finance, Automation, Data, AI Runtime, Offline/Edge); industry systems rise — Codingo, Restaurant OS, Automotive OS, Energy OS, Hospitality OS, Trade OS, Shata Pay; Human Operations is marked always available and AI Intelligence optional; the sequence locks up on: Building intelligent operating systems for real-world industries." width="100%">
+  </a>
+  <br>
+  <sub><a href="https://shatasolutions.github.io/shatasolutions/">▶ Watch the full motion experience</a></sub>
 </p>
 
 <h3 align="center">Building operating systems for real-world industries.</h3>
