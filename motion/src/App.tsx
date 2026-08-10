@@ -12,10 +12,14 @@ export default function App() {
   const [playing, setPlaying] = useState(EXPORT_T === null);
   const [optedIn, setOptedIn] = useState(false);
   const controlsRef = useRef<AnimationPlaybackControls | null>(null);
+  const clockRef = useRef({ playing: true, start: 0 });
   const reduced = prefersReduced && !optedIn && EXPORT_T === null;
 
   useEffect(() => {
-    const controls = buildTimeline();
+    // The paused sequence is scrubbed everywhere — an explicit rAF clock drives
+    // live playback with the exact mechanism the frame exporter uses, so the
+    // browser experience and the rendered GIF share one verified code path.
+    const controls = buildTimeline({ paused: true });
     controlsRef.current = controls;
 
     if (EXPORT_T !== null) {
@@ -35,12 +39,16 @@ export default function App() {
       return () => controls.cancel();
     }
 
-    controls.play();
     let raf = 0;
-    const tick = () => {
-      const t = controls.time % LOOP;
-      applyAmbient(t);
-      if (controls.time >= LOOP) { controls.time = 0; controls.play(); }
+    clockRef.current = { playing: true, start: performance.now() };
+    (window as unknown as Record<string, unknown>).__shataDebug = { controls, clock: clockRef.current };
+    const tick = (now: number) => {
+      const clock = clockRef.current;
+      if (clock.playing) {
+        const t = (Math.max(0, now - clock.start) / 1000) % LOOP;
+        controls.time = t;
+        applyAmbient(t);
+      }
       raf = requestAnimationFrame(tick);
     };
     raf = requestAnimationFrame(tick);
@@ -49,16 +57,21 @@ export default function App() {
 
   const toggle = () => {
     const c = controlsRef.current;
+    const clock = clockRef.current;
     if (!c) return;
-    if (playing) c.pause(); else c.play();
+    if (playing) {
+      clock.playing = false;
+    } else {
+      // Resume from the frozen position: re-anchor the clock.
+      clock.start = performance.now() - (c.time % LOOP) * 1000;
+      clock.playing = true;
+    }
     setPlaying(!playing);
   };
   const replay = () => {
-    const c = controlsRef.current;
-    if (!c) return;
-    c.time = 0;
-    applyAmbient(0);
-    c.play();
+    const clock = clockRef.current;
+    clock.start = performance.now();
+    clock.playing = true;
     setPlaying(true);
   };
 
