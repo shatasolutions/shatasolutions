@@ -97,4 +97,4 @@ More of the foundation becomes public as it stabilizes.
 
 <sub>Everything on this page is backed by repository evidence or explicitly labeled
 as in development. No production claims are made without a system in production.
-Page verified 2026-08-08.</sub>
+Page verified 2026-08-10.</sub>
