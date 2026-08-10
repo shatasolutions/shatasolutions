@@ -9,7 +9,7 @@ import { C, SANS, MONO, STAGE, LOOP, PLATFORM_NODES, PRODUCTS } from "./tokens";
  * frame-exported GIF/MP4 pixel-identical by construction.
  * state(0) === state(LOOP), so the loop wraps seamlessly.
  */
-export function buildTimeline(): AnimationPlaybackControls {
+export function buildTimeline(opts: { paused: boolean } = { paused: true }): AnimationPlaybackControls {
   const ease = "easeOut" as const;
   const controls = animate([
     // Scene 1 — initialization: scan sweep + status signals over the ambient grid.
@@ -45,7 +45,10 @@ export function buildTimeline(): AnimationPlaybackControls {
     ["#lockup2", { opacity: 0 }, { at: 10.45, duration: 0.4, ease: "easeIn" }],
     ["#wordmark", { opacity: 0.18, letterSpacing: "0.16em", y: 6 }, { at: 10.55, duration: 0.45, ease }],
   ]);
-  controls.pause();
+  // Pausing at construction is only safe for scrub modes (export / reduced
+  // motion): in live playback, play()-after-immediate-pause never starts the
+  // sequence in real browsers, so live mode keeps the native autoplay.
+  if (opts.paused) controls.pause();
   return controls;
 }
 
