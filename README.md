@@ -40,8 +40,7 @@ governed AI runtime.
   labelled demo data.
 
 **Day to day:** TypeScript, Next.js, React, React Native / Expo, Electron, NestJS,
-Node.js, PostgreSQL with row-level security, Prisma, Redis, GitHub Actions, Docker,
-Railway and Vercel.
+Node.js, PostgreSQL with row-level security, Prisma, Redis, GitHub Actions and Docker.
 
 ### Contact
 
