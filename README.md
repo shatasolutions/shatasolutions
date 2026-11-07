@@ -1,100 +1,52 @@
-<p align="center">
-  <a href="https://shatasolutions.github.io/shatasolutions/">
-    <img src="assets/hero-motion.gif" alt="Animated title sequence: the Shata Solutions wordmark ignites over a drifting grid; a central engineering core assembles a platform ring (Engineering Core, Identity, Finance, Automation, Data, AI Runtime, Offline/Edge); industry systems rise — Codingo, Restaurant OS, Automotive OS, Energy OS, Hospitality OS, Trade OS, Shata Pay; Human Operations is marked always available and AI Intelligence optional; the sequence locks up on: Building intelligent operating systems for real-world industries." width="100%">
-  </a>
-  <br>
-  <sub><a href="https://shatasolutions.github.io/shatasolutions/">▶ Watch the full motion experience</a></sub>
-</p>
+<a href="https://github.com/shata-solutions">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shata-solutions/.github/main/profile/assets/hero-mobile-dark-1440x1720.jpg">
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/shata-solutions/.github/main/profile/assets/hero-mobile-light-1440x1720.jpg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shata-solutions/.github/main/profile/assets/hero-dark-2560x1120.jpg">
+    <img src="https://raw.githubusercontent.com/shata-solutions/.github/main/profile/assets/hero-light-2560x1120.jpg" width="100%" alt="Shata Solutions — Engineering Intelligent Systems. Links to the official Shata Solutions organization on GitHub.">
+  </picture>
+</a>
 
-<h3 align="center">Building operating systems for real-world industries.</h3>
-<p align="center"><em>AI-powered when useful. Fully human-operable by design.</em></p>
+## Mostafa Shata
 
-<p align="center">
-  <a href="#what-we-build">What we build</a> ·
-  <a href="#how-we-engineer">How we engineer</a> ·
-  <a href="#open-source">Open source</a> ·
-  <a href="#contact">Contact</a>
-</p>
+**Founder & Full Stack Developer, [Shata Solutions](https://github.com/shata-solutions)**
 
----
+I founded Shata Solutions and lead its engineering. I design and build the company's
+products end to end: business operating systems for restaurants, hotels, clinics,
+contractors, retailers, traders and service centres, and the shared platform under them —
+one control plane for identity and entitlements, an offline-first device runtime and a
+governed AI runtime.
 
-Shata Solutions is a product-engineering company. We build vertical operating
-systems — complete, opinionated software platforms for running a real business in a
-specific industry — on one shared engineering foundation.
+> **The official company presence is [github.com/shata-solutions](https://github.com/shata-solutions).**
+> Product repositories, releases, open-source tooling and security reporting live there.
+> This is my personal account.
 
-Three commitments run through everything:
+### Where to look
 
-1. **AI is optional, never load-bearing.** Every system has a complete manual
-   *Human Mode*; AI features assist, they don't gate operations.
-2. **Offline-first where the business needs it.** Point-of-sale and floor operations
-   keep working when the connection doesn't.
-3. **Measurable engineering discipline.** Every repository is held to a published
-   blueprint and scored by an open-source checker — the same one linked below.
-
-## What we build
-
-Most product repositories are private while in active development; they are listed
-here for breadth, not linkable. Maturity labels follow our shared vocabulary
-(*Concept → Foundation → In development → Pilot-ready → Production*) and mirror each
-repository's own status documentation.
-
-| System | Industry | What it is | Status |
-| --- | --- | --- | --- |
-| **Codingo** | Software engineering | Independent Agent Operating System — models propose; a deterministic control plane decides, gates, executes, and rolls back | In development |
-| **AutoCare OS** | Auto service centers | Workshop operating system — jobs, protection studio, offline PWA, verified backup/restore | Pilot-ready |
-| **Commerce OS** | Retail / supermarkets | Register/POS, catalog, pricing, promotions, inventory, purchasing, finance, offline sync | In development |
-| **Restaurant OS** | Restaurants | Orders, kitchen flow, and operations for food service | In development |
-| **Hospitality OS** | Hotels | Reservations engine and front-desk operations | In development |
-| **Trade OS** | Import / export | Trade documents, filings, costs, and ledger workflows | In development |
-| **Energy OS** | Fuel & energy retail | Station and energy-retail operations | In development |
-| **Automotive Dealer OS** | Used-car dealerships | B2B dealership operating system, Egypt-first | Foundation (docs-only) |
-| **Shata Platform** | Shared core | Versioned `@shata/*` packages and cross-product contracts (accounting, offline sync) | In development |
-
-## How we engineer
-
-Our account-wide Engineering OS — a 24-chapter handbook of standards (repository
-blueprint, git standards, AI-assisted engineering policy, offline-first standard,
-financial-engineering standard with integer-money rules, AI/Human operation
-standard) — governs every repository. Two things about it are unusual:
-
-- **It is mechanically enforced.** A zero-dependency checker validates each repo
-  against the blueprint and computes a heuristic Engineering Score in CI — a floor,
-  not a certification. The tool is public: [`engineering-os-tools`](https://github.com/shatasolutions/engineering-os-tools).
-- **It is honest by rule.** Status claims in any repo must match implementation
-  truth; prototypes are labeled as prototypes. The same rule applies to this page.
-
-```mermaid
-flowchart LR
-    subgraph Foundation["Engineering foundation"]
-        HB[Engineering OS handbook] --> CK[Blueprint checks + Engineering Score in CI]
-        PL["Shata Platform — @shata/* packages"]
-    end
-    PL --> V1[Commerce OS]
-    PL --> V2[Restaurant OS]
-    PL --> V3[AutoCare OS]
-    PL --> V4[Hospitality · Trade · Energy · Automotive]
-    CK -.govern.- V1 & V2 & V3 & V4
-    C[Codingo — Agent OS] -.builds with.- Foundation
-```
-
-Every vertical ships with **AI Mode and Human Mode** as peers, runs **cloud,
-local-edge, or offline** where the domain demands it, and handles money in
-**integer minor units** end to end.
-
-## Open source
-
-| Project | What it does |
+| | |
 | --- | --- |
-| [`engineering-os-tools`](https://github.com/shatasolutions/engineering-os-tools) | Zero-dependency repository blueprint checker + engineering-score tool, with matching reusable GitHub Actions workflows. MIT. `v1` line, tagged releases. |
+| [**@shata-solutions**](https://github.com/shata-solutions) | The company on GitHub: products, architecture, public status of each system |
+| [**engineering-os-tools**](https://github.com/shata-solutions/engineering-os-tools) | Open-source repository checks that gate every Shata repository. MIT |
+| [**shatasolutions.com**](https://www.shatasolutions.com) | Product pages and live demos |
+| [**shatasolutions.com/engineering**](https://www.shatasolutions.com/engineering) | How the products are built, tested, released and operated |
 
-More of the foundation becomes public as it stabilizes.
+### How I build
 
-## Contact
+- **AI is optional, never load-bearing.** Every AI feature has a manual counterpart;
+  deterministic code owns money, stock, permissions and compliance state.
+- **Offline-first where the business needs it.** Point-of-sale, kitchen and field
+  operations keep working without a connection and reconcile idempotently.
+- **Status claims match the code.** Prototypes are labelled prototypes and demo data is
+  labelled demo data.
 
-- **Email:** [info@shatasolutions.com](mailto:info@shatasolutions.com)
-- **Partnerships, pilots, and engineering roles:** same address, subject-prefixed
-  (`[Partnership]`, `[Pilot]`, `[Careers]`).
+**Day to day:** TypeScript, Next.js, React, React Native / Expo, Electron, NestJS,
+Node.js, PostgreSQL with row-level security, Prisma, Redis, GitHub Actions, Docker,
+Railway and Vercel.
 
-<sub>Everything on this page is backed by repository evidence or explicitly labeled
-as in development. No production claims are made without a system in production.
-Page verified 2026-08-10.</sub>
+### Contact
+
+Work with the company through [sales@shatasolutions.com](mailto:sales@shatasolutions.com)
+(pilots and partnerships) or [info@shatasolutions.com](mailto:info@shatasolutions.com).
+
+<sub>Other public repositories on this account are earlier personal projects. The
+maintained copy of <code>engineering-os-tools</code> is the one in the organization.</sub>
